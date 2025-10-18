@@ -1,4 +1,4 @@
 import streamlit as st
 st. balloons() 
 st. buttons() 
-st. sidebar() 
+st. sidebar. markdown("menu screen") 
