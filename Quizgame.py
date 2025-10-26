@@ -8,5 +8,4 @@ import streamlit as st
 #n = st.checkbox("B")
 #n = st.text_input("Enter,,,,",placeholder="Please press enter to feed answer")
 #st.write(n)
-n = st.checkbox(1) 
-st.write(n) 
+
