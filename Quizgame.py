@@ -11,7 +11,7 @@ if ans == 'c' or ans=='C':
 else:
   score = 0
 if score == 5 :
-  st.write("congratulations!")
+  st.write("congratulations! you have scored",score,'in quiz')
   st.balloons()
 # n = st.checkbox("A")
 # n = st.checkbox("B")
