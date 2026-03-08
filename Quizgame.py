@@ -11,24 +11,23 @@ if ans == 'c' or ans=='C':
 else:
   score = 0
 st.write("Q2. Which language is widely used for data analysis?\nA)HTML    B) CSS   C) JAVA   D) PYHTONE ")
-ans = st.text_input("Enter your choice...",placeholder="Please press enter to feed answer")
-if ans == 'd' or ans=='D':
+ans2 = st.text_input("Enter your choice...",placeholder="Please press enter to feed answer")
+if ans2 == 'd' or ans=='D':
   score=5
 else:
   score = 0 
 st.write("Q3.What does SQL stand for?\nA)Simple Query Language   B) system Query language   C) structure Query lamguage   D) Sequential Query Language ")
-ans = st.text_input("Enter your choice...",placeholder="Please press enter to feed answer")
-if ans == 'c' or ans=='C':
+ans3 = st.text_input("Enter your choice...",placeholder="Please press enter to feed answer")
+if ans3 == 'c' or ans=='C':
   score=5
 else:
   score = 0 
 st.write("Q4.Which chart is best for showing trends over time?\nA)pie chat  B) line chat   C) bar chat   D) Scatter Plot ")
-ans = st.text_input("Enter your choice...",placeholder="Please press enter to feed answer")
-if ans == 'c' or ans=='C':
+ans4 = st.text_input("Enter your choice...",placeholder="Please press enter to feed answer")
+if ans4 == 'c' or ans=='C':
   score=5
 else:
-  score = 0    
-  
+  score = 0      
 if score == 20 :
   st.write("congratulations! you have scored",score,'in quiz')
   st.balloons()
