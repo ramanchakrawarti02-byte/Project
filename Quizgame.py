@@ -1,36 +1,42 @@
 import streamlit as st
+st.write('Hello Students!')
+st.write
+Score= 0
+st.write("Welcome to quiz game....")
+st.write('Q1. What is the first alphabetb of english language?\nA)C B)T\n C)A  D)F')
+ans = st.text_input("Enter your choice....")
+if ans.lower()== 'c':
+    Score +=5
+st.write('_________________________')
 
-st.write("Hello welcome to Quiz Game application he")
-st.sidebar.markdown("Quiz Menu...")
-st.sidebar.markdown("Quiz Game")
-score = 0
-st.write("Q1. Which is the first alphabet of english language?\nA) c   B) d    C) a   D) f")
-ans = st.text_input("Enter your choice...")
-if ans == 'c' or ans=='C':
-  score+=5
-st.write("Q2. Which language is widely used for data analysis?\nA)HTML    B) CSS   C) JAVA   D) PYHTONE ")
-ans = st.text_input("Enter your choice...")
-if ans == 'd' or ans=='D':
-  score+=5
-st.write("Q3.What does SQL stand for?\nA)Simple Query Language   B) system Query language   C) structure Query lamguage   D) Sequential Query Language ")
-ans = st.text_input("Enter your choice...")
-if ans == 'c' or ans=='C':
-  score+=5
-st.write("Q4.Which chart is best for showing trends over time?\nA)pie chat  B) line chat   C) bar chat   D) Scatter Plot ")
-ans = st.text_input("Enter your choice...")
-if ans == 'c' or ans=='C':
-  score+=5
-if score == 20 :
-  st.write("congratulations! you have scored",score,'in quiz')
-  st.balloons()
-elif score == 15 :
-   st.write("congratulations! you have scored",score,'in quiz')
-   st.snow() 
+st.write('Q2. What is the National Bird?\n A)Peacock  B)Crow\n  C)pegion  D)Duck')
+ans = st.text_input ("Enter Your Choice....")
+
+if ans.lower() == 'a':
+    Score +=5
+st.write('----------------------------------------------------------------------------------')
+st.write("Q3. what is the national Animal?\n A) tiger B) lion  C) Elephant D) bear")
+ans= st.text_input("enter ur chioce....")
+if ans.lower() == 'a':
+     Score +=5
+st.write('----------------------------------------------------------------------------')
+st.write('Q4. what is middle alphabet in CAT?\n A) T   B) C   C)W    D)A')
+ans = st.text_input("Enter ur choice....")
+if ans.lower() == 'd':
+   Score+=5
+st.write('--------------------------------------------------------------------------')
+st.write ('What is the national vegetable?\n A)tomato B) onion  C) peas  D) brinjal')
+ans = st.text_input("Enter ur choice.....")
+if ans.lower() == 'd':
+     Score+=5
+st.write ('---------------------------------------------------------------------')
+if Score == 25:
+    st.write("Congratulation !! you have scored__",Score,"1st position")
+    st.balloons()
+
+elif Score == 15:
+    st.write("Congratulation !! you have scored__",Score,"2nd position")
+    st.snow()
+
 else:
-  st.write("fail")
-  
-# n = st.checkbox("A")
-# n = st.checkbox("B")
-# n = st.text_input("Enter,,,,",placeholder="Please press enter to feed answer")
-# st.write(n)
-
+    st.write("Congratulation !! you have scored__",Score,"better Luck next time")
