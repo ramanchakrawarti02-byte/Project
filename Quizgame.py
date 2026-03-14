@@ -1,42 +1,51 @@
 import streamlit as st
-st.write('Hello Students!')
-st.write
-Score= 0
+
+st.write("Hello Students!")
+score = 0
 st.write("Welcome to quiz game....")
-st.write('Q1. What is the first alphabetb of english language?\nA)C B)T\n C)A  D)F')
-ans = st.text_input("Enter your choice....")
-if ans.lower()== 'c':
-    Score +=5
-st.write('_________________________')
 
-st.write('Q2. What is the National Bird?\n A)Peacock  B)Crow\n  C)pegion  D)Duck')
-ans = st.text_input ("Enter Your Choice....")
+# Q1
+st.write("Q1. What is the first alphabetb of english language?\nA)C B)T\n C)A  D)F")
+    
+ans1 = st.text_input("Enter answer for Q1")
 
-if ans.lower() == 'a':
-    Score +=5
-st.write('----------------------------------------------------------------------------------')
+# Q2
+st.write("Q2 What is the National Bird?\n A)Peacock  B)Crow\n  C)pegion  D)Duck")
+ans2 = st.text_input("Enter answer for Q2")
+
+# Q3
 st.write("Q3. what is the national Animal?\n A) tiger B) lion  C) Elephant D) bear")
-ans= st.text_input("enter ur chioce....")
-if ans.lower() == 'a':
-     Score +=5
-st.write('----------------------------------------------------------------------------')
-st.write('Q4. what is middle alphabet in CAT?\n A) T   B) C   C)W    D)A')
-ans = st.text_input("Enter ur choice....")
-if ans.lower() == 'd':
-   Score+=5
-st.write('--------------------------------------------------------------------------')
-st.write ('What is the national vegetable?\n A)tomato B) onion  C) peas  D) brinjal')
-ans = st.text_input("Enter ur choice.....")
-if ans.lower() == 'd':
-     Score+=5
-st.write ('---------------------------------------------------------------------')
-if Score == 25:
-    st.write("Congratulation !! you have scored__",Score,"1st position")
-    st.balloons()
+ans3 = st.text_input("Enter answer for Q3")
 
-elif Score == 15:
-    st.write("Congratulation !! you have scored__",Score,"2nd position")
-    st.snow()
+# Q4
+st.write("Q4. what is middle alphabet in CAT?\n A) T   B) C   C)W    D)A")
+ans4 = st.text_input("Enter answer for Q4")
 
-else:
-    st.write("Congratulation !! you have scored__",Score,"better Luck next time")
+# Q5
+st.write("Q5.What is the national vegetable?\n A)tomato B) onion  C) peas  D) brinjal")
+ans5 = st.text_input("Enter answer for Q5")
+
+# Submit button
+if st.button("Submit Quiz"):
+
+    score = 0
+
+    if ans1.lower() == "c":
+        score += 5
+    if ans2.lower() == "a":
+        score += 5
+    if ans3.lower() == "a":
+        score += 5
+    if ans4.lower() == "d":
+        score += 5
+    if ans5.lower() == "d":
+        score += 5
+
+    if score == 25:
+        st.write("Congratulations! You scored", score, "1st Position")
+        st.balloons()
+    elif score >= 15:
+        st.write("Congratulations! You scored", score, "2nd Position")
+        st.snow()
+    else:
+        st.write("You scored", score, "Better luck next time")
